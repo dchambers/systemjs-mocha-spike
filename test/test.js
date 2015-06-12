@@ -1,7 +1,10 @@
 import chai from 'chai';
 import System from 'systemjs';
+import systemConfig from '../config';
 
 const expect = chai.expect;
+
+System.config(systemConfig);
 
 describe('stuff', function() {
 	let stuff = null;
